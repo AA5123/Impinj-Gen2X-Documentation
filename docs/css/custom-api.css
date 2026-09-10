@@ -292,14 +292,19 @@ table {
  border: 1px solid var(--color-border);
 }
 .md-table {
- table-layout: auto;
+ table-layout: fixed;
+}
+.md-table td,
+.md-table th {
+ word-wrap: break-word;
+ overflow-wrap: break-word;
 }
 .info-description .md-table {
  max-width: 100%;
 }
 .info-description .md-table th:first-child,
 .info-description .md-table td:first-child {
- width: 190px;
+ width: 30%;
 }
 th,
 td {
