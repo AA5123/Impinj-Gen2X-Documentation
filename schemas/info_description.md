@@ -1,4 +1,19 @@
-﻿Use this guide to enable, configure, and manage Impinj Gen2X features on Zebra fixed RFID readers using both MQTT and REST APIs. These features are currently supported by FXR and FX/ATR fixed readers with Firmware 4.0.8 and above.
+﻿Use this guide to enable, configure, and manage Impinj Gen2X features on Zebra fixed RFID readers using both MQTT and REST APIs. The same APIs are supported on **FXR Fixed Readers**, **FX9600**, **FX7500**, and **ATR7000** readers running firmware that includes Gen2X support.
+
+## Supported Readers and Known Limitations
+
+The Gen2X API parameters are available on all supported readers listed below. A **Supported - known issue** entry means that the feature is implemented, but a defect in the current firmware can affect the indicated operation. It does not mean that the API parameter is unsupported.
+
+| Reader | FastID | TagFocus | Tag Quieting / Unquieting | Tag Protection | Unprotect | Gen2X inventory mode |
+| --- | --- | --- | --- | --- | --- | --- |
+| FXR Fixed Readers | Supported | Supported | Supported | Supported | Supported | Supported |
+| FX9600 | Supported | Supported | Supported | Supported | Supported | Supported |
+| FX7500 (ASIC) | Supported | Supported | Supported | Supported | Supported | Supported |
+| FX7500 (legacy) | Supported - known issue | Supported | Supported - known issue | Supported - known issue | Supported - known issue | Supported - known issue |
+| ATR7000 (800 MHz) | Supported | Supported | Supported | Supported - known issue | Supported - known issue | Supported - known issue |
+| ATR7000 (900 MHz) | Supported | Supported | Supported | Supported | Supported | Supported - known issue |
+
+Known issue symptoms include operation failures on legacy FX7500 readers, unprotect failures on 800 MHz ATR7000 readers, and Gen2X inventory reporting only one tag on ATR7000 readers. These issues are being addressed. Before deployment, install the latest supported reader firmware and review its release notes. Contact Zebra Support for current defect and fix status.
 
 ## Overview
 
